@@ -1,0 +1,47 @@
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.generalMenuItem {
+  font-family: Arial;
+  font-size: 22px;
+}
+
+.naviMenuItem {
+  color: black;
+  font-weight: bold;
+  font-family: Arial;
+  text-decoration: none;
+  display: inline;
+  float: left;
+  padding: 18px;
+  margin-top: -16px;
+}
+
+.naviMenuItem:hover {
+  background-color: #262626;
+  color: #dedede;
+}
+
+#navigationBarList {
+  list-style-type: none;
+  padding-left: 100px;
+}
+
+#navigationBar {
+  margin: -8px;
+  width: 100vw;
+  height: 54.2px;
+  background-color: lightgrey;
+  display: inline-block;
+}
