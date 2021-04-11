@@ -40,14 +40,14 @@ body {
   width: 100%;
   height: 52px;
   background-image: url('images/image.png');
-  opacity: 0.2;
-  z-index: 1;
+  opacity: 0.8;
+  z-index: 2;
 }
 
 #navbarItems {
   position: fixed;
   padding-left: 38%;
-  z-index: 2;
+  z-index: 3;
 }
 
 ul {
@@ -85,6 +85,8 @@ li:hover {
    z-index: 2;
 }
 
+/* - CONTENT HOLDERS - */
+
 .contentHolder {
   display: inline-block;
   border-radius: 50px;
@@ -92,7 +94,21 @@ li:hover {
 
   position: absolute;
   width: 80vw;
+  /*height: 500px; - changed: they should be defined in every contentholder manually*/
+}
+
+#contentHolder1 {
   height: 500px;
+}
+
+#contentHolder2 {
+  top: 100vh;
+  height: 750px;
+}
+
+#contentHolder3 {
+  top: 210vh;
+  height: 600px;
 }
 
 .customCard {
@@ -101,31 +117,31 @@ li:hover {
   height: 430px;
 }
 
-#card1
-{
-    margin: 30px auto 0px 200px;
-}
+/* CARD BACKGROUNDS*/
 
-#card2
-{
-    margin: 30px auto 0px 100px;
-}
-
-#card3
-{
-    margin: 30px auto 0px 100px;
-}
-
+/* GENERAL */
 .cardsBackground {
   border-radius: 50px;
 
   position: absolute;
   width: 80vw;
-  height: 500px;
+  /*height: 500px;*/
   background-color: black;
   opacity: 0.3;
   bottom: 8px;
   z-index: -1;
+}
+
+#cardsBackground1 {
+  height: 500px;
+}
+
+#cardsBackground2 {
+  height: 750px;
+}
+
+#cardsBackground3 {
+  height: 600px;
 }
 
 .customHeader1 {
