@@ -2,7 +2,7 @@ body {
     overflow-y: scroll;
     height: 300vh;
   }
-  
+
   #backgroundImage1 {
     width: 99.12vw;
     height: 100vh;
@@ -10,7 +10,7 @@ body {
     float: left;
     z-index: -2;
   }
-  
+
   #backgroundImage2 {
     top: 100vh;
     width: 99.12vw;
@@ -20,7 +20,7 @@ body {
     float: left;
     z-index: -2;
   }
-  
+
   #backgroundImage3 {
     top: 200vh;
     width: 99.12vw;
@@ -30,11 +30,41 @@ body {
     float: left;
     z-index: -2;
   }
-  
+
+  #backgroundImage4 {
+    top: 300vh;
+    width: 99.12vw;
+    height: 100vh;
+    margin-left: -13px;
+    position:absolute;
+    float: left;
+    z-index: -2;
+  }
+
+  #backgroundImage5 {
+    top: 400vh;
+    width: 99.12vw;
+    height: 100vh;
+    margin-left: -18px;
+    position:absolute;
+    float: left;
+    z-index: -2;
+  }
+
+  #backgroundImage6 {
+    top: 500vh;
+    width: 99.12vw;
+    height: 100vh;
+    margin-left: -22px;
+    position:absolute;
+    float: left;
+    z-index: -2;
+  }
+
   #navigationBar {
     margin-top: -25px;
   }
-  
+
   #navbarBackground {
     position: fixed;
     width: 100%;
@@ -43,24 +73,24 @@ body {
     opacity: 0.8;
     z-index: 2;
   }
-  
+
   #navbarItems {
     position: fixed;
     padding-left: 38%;
     z-index: 3;
   }
-  
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
-  
+
   li {
     float: left;
   }
-  
+
   li a {
     padding: 14px 16px;
     display: block;
@@ -68,13 +98,13 @@ body {
     color: white;
     text-decoration: none;
   }
-  
+
   li:hover {
     background-color: #ffffff;
     color: black;
-  
+
   }
-  
+
   #logo {
      width: 258.6px;
      height: 159.6px;
@@ -84,60 +114,60 @@ body {
      margin-right: auto;
      z-index: 2;
   }
-  
+
   /* - CONTENT HOLDERS - */
-  
+
   .contentHolder {
     display: inline-block;
     border-radius: 50px;
     margin: 90px 0px 0px 200px;
-  
+
     position: absolute;
     width: 80vw;
     /*height: 500px; - changed: they should be defined in every contentholder manually*/
   }
-  
+
   #contentHolder1 {
-    height: 500px;
+    height: 400px;
   }
-  
+
   #contentHolder2 {
-    top: 100vh;
-    height: 750px;
+    top: 120vh;
+    height: 400px;
   }
-  
+
   #contentHolder3 {
-    top: 210vh;
-    height: 600px;
+    top: 225vh;
+    height: 350px;
   }
 
   #contentHolder4 {
-    top: 350px;
-    height: 600px;
+    top: 320vh;
+    height: 350px;
   }
 
   #contentHolder5 {
-    top: 450px;
-    height: 600px;
+    top: 415vh;
+    height: 350px;
   }
 
   #contentHolder6 {
-    top: 550px;
-    height: 600px;
+    top: 525vh;
+    height: 350px;
   }
-  
+
   .customCard {
     display: inline-block;
     width: 300px;
     height: 430px;
   }
-  
+
   /* CARD BACKGROUNDS*/
-  
+
   /* GENERAL */
   .cardsBackground {
     border-radius: 50px;
-  
+
     position: absolute;
     width: 80vw;
     /*height: 500px;*/
@@ -146,32 +176,43 @@ body {
     bottom: 8px;
     z-index: -1;
   }
-  
+
   #cardsBackground1 {
-    height: 500px;
+    height: 400px;
   }
-  
+
   #cardsBackground2 {
-    height: 750px;
+    height: 400px;
   }
-  
+
   #cardsBackground3 {
-    height: 600px;
+    height: 350px;
   }
-  
+
+  #cardsBackground4 {
+    height: 350px;
+  }
+
+  #cardsBackground5 {
+    height: 350px;
+  }
+
+  #cardsBackground6 {
+    height: 350px;
+  }
+
   .customHeader1 {
     position: relative;
     color: white;
     z-index: 1;
   }
-  
+
   .paragraph1 {
     position: relative;
     font-size: 25px;
     color: #f0f0f0;
   }
-  
+
   .futureListItem {
     font-size: 20px;
   }
-  
