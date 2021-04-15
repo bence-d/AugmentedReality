@@ -1,218 +1,235 @@
 body {
-    overflow-y: scroll;
-    height: 300vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 300vh;
+}
+
+#backgroundImage1 {
+  width: 1920px;
+  height: 100vh;
+
+  position:absolute;
+  float: left;
+  z-index: -2;
+  top: 0px;
+}
+
+#backgroundImage2 {
+  top: 100vh;
+  width: 1920px;
+  height: 100vh;
+  margin-left: -4px;
+  position:absolute;
+  float: left;
+  z-index: -2;
+}
+
+#backgroundImage3 {
+  top: 200vh;
+  width: 1920px;
+  height: 100vh;
+  margin-left: -9px;
+  position:absolute;
+  float: left;
+  z-index: -2;
+}
+
+#backgroundImage4 {
+  top: 300vh;
+  width: 1920px;
+  height: 100vh;
+  margin-left: -12px;
+  position:absolute;
+  float: left;
+  z-index: -2;
+}
+
+#backgroundImage5 {
+  top: 400vh;
+  width: 1920px;
+  height: 100vh;
+  margin-left: -19px;
+  position:absolute;
+  float: left;
+  z-index: -2;
+}
+
+#backgroundImage6 {
+  top: 500vh;
+  width: 1920px;
+  height: 100vh;
+  margin-left: -26px;
+  position:absolute;
+  float: left;
+  z-index: -2;
+}
+
+#navigationBar {
+  margin-top: -25px;
+}
+
+#navbarBackground {
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  background-image: url('../Images/navbarBackground.png');
+  opacity: 0.8;
+  z-index: 2;
+}
+
+#navbarItems {
+  width: 500px;
+  position: fixed;
+  left: 51%;
+  transform: translate(-50%, 0);
+  z-index: 3;
+}
+
+#navBarList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navBarListItem {
+  float: left;
+}
+
+#navBarListItem a {
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#navBarListItem a:hover {
+  color: #0281db;
+}
+
+#navBarListItem:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+#logo {
+  width: 258.6px;
+  height: 159.6px;
+  display: block;
+  position: relative;
+  margin: 20px auto 150px auto;
+  top: 80px;
+  z-index: 2;
+}
+
+/* - CONTENT HOLDERS - */
+
+.contentHolder {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 25px;
+  overflow-y: scroll;
+
+  background-color: rgba(0,0,0, 0.3);
+}
+
+.contentHolder::-webkit-scrollbar {
+  display: none;
+}
+
+#contentHolder1 {
+  max-height: 60vh;
+}
+
+#contentHolder2 {
+  position: absolute;
+  top: 110vh;
+  min-width: 80vw;
+}
+
+#contentHolder3 {
+  position: absolute;
+  top: 210vh;
+  min-width: 80vw;
+}
+
+#contentHolder4 {
+  position: absolute;
+  top: 310vh;
+  min-width: 80vw;
+}
+
+#contentHolder5 {
+  position: absolute;
+  top: 410vh;
+  min-width: 80vw;
+}
+
+#contentHolder6 {
+  position: absolute;
+  top: 510vh;
+  min-width: 80vw;
+}
+
+.customHeader1 {
+  padding: 40px 50px 10px 50px;
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.paragraph1 {
+  position: relative;
+  font-size: 25px;
+  color: #f0f0f0;
+  padding: 20px 50px 20px 50px;
+}
+
+@media (orientation: portrait)
+{
+  .contentHolder {
+    width: 90vw;
   }
 
-  #backgroundImage1 {
-    width: 99.12vw;
-    height: 100vh;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #backgroundImage2 {
-    top: 100vh;
-    width: 99.12vw;
-    height: 100vh;
-    margin-left: -4px;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #backgroundImage3 {
-    top: 200vh;
-    width: 99.12vw;
-    height: 100vh;
-    margin-left: -9px;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #backgroundImage4 {
-    top: 300vh;
-    width: 99.12vw;
-    height: 100vh;
-    margin-left: -13px;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #backgroundImage5 {
-    top: 400vh;
-    width: 99.12vw;
-    height: 100vh;
-    margin-left: -18px;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #backgroundImage6 {
-    top: 500vh;
-    width: 99.12vw;
-    height: 100vh;
-    margin-left: -22px;
-    position:absolute;
-    float: left;
-    z-index: -2;
-  }
-
-  #navigationBar {
-    margin-top: -25px;
+  #navbarItems {
+    position: fixed;
+    padding-left: 0%;
+    left: 0%;
+    transform: translate(0%, 0);
+    top: 0px;
   }
 
   #navbarBackground {
     position: fixed;
     width: 100%;
     height: 52px;
-    background-image: url('../images/navbarBackground.png');
-    opacity: 0.8;
-    z-index: 2;
-  }
-
-  #navbarItems {
-    position: fixed;
-    padding-left: 38%;
-    z-index: 3;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    padding: 14px 16px;
-    display: block;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-  }
-
-  li:hover {
-    background-color: #ffffff;
-    color: black;
-
-  }
-
-  #logo {
-     width: 258.6px;
-     height: 159.6px;
-     display: block;
-     margin-top: 105px;
-     margin-left: auto;
-     margin-right: auto;
-     z-index: 2;
-  }
-
-  /* - CONTENT HOLDERS - */
-
-  .contentHolder {
-    display: inline-block;
-    border-radius: 50px;
-    margin: 90px 0px 0px 200px;
-
-    position: absolute;
-    width: 80vw;
-    /*height: 500px; - changed: they should be defined in every contentholder manually*/
-  }
-
-  #contentHolder1 {
-    height: 400px;
-  }
-
-  #contentHolder2 {
-    top: 120vh;
-    height: 400px;
-  }
-
-  #contentHolder3 {
-    top: 225vh;
-    height: 350px;
-  }
-
-  #contentHolder4 {
-    top: 320vh;
-    height: 350px;
-  }
-
-  #contentHolder5 {
-    top: 415vh;
-    height: 350px;
-  }
-
-  #contentHolder6 {
-    top: 525vh;
-    height: 350px;
-  }
-
-  .customCard {
-    display: inline-block;
-    width: 300px;
-    height: 430px;
-  }
-
-  /* CARD BACKGROUNDS*/
-
-  /* GENERAL */
-  .cardsBackground {
-    border-radius: 50px;
-
-    position: absolute;
-    width: 80vw;
-    /*height: 500px;*/
-    background-color: black;
-    opacity: 0.3;
-    bottom: 8px;
-    z-index: -1;
-  }
-
-  #cardsBackground1 {
-    height: 400px;
-  }
-
-  #cardsBackground2 {
-    height: 400px;
-  }
-
-  #cardsBackground3 {
-    height: 350px;
-  }
-
-  #cardsBackground4 {
-    height: 350px;
-  }
-
-  #cardsBackground5 {
-    height: 350px;
-  }
-
-  #cardsBackground6 {
-    height: 350px;
-  }
-
-  .customHeader1 {
-    position: relative;
-    color: white;
-    z-index: 1;
+    top: 0px;
   }
 
   .paragraph1 {
     position: relative;
-    font-size: 25px;
-    color: #f0f0f0;
-  }
-
-  .futureListItem {
     font-size: 20px;
   }
+
+  #logo {
+    top: 60px;
+    margin: 5px auto 100px auto;
+  }
+
+  .contentHolder {
+    max-width: 90vw;
+    max-height: 67vh;
+  }
+
+  #contentHolder2 {
+    max-height: 80vh;
+  }
+
+  #contentHolder3 {
+    max-height: 80vh;
+  }
+}
