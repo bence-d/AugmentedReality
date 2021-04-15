@@ -52,7 +52,7 @@ body {
   position: fixed;
   width: 100%;
   height: 52px;
-  background-image: url('../images/navbarBackground.png');
+  background-image: url('../Images/navbarBackground.png');
   opacity: 0.8;
   z-index: 2;
 }
