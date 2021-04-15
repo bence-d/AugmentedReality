@@ -55,27 +55,18 @@ body {
   z-index: 3;
 }
 
-
-h1 {
-  padding: 40px 50px 10px 50px;
-}
-
-p {
-  padding: 20px 50px 20px 50px;
-}
-
-ul {
+#navBarList {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
+#navBarListItem {
   float: left;
 }
 
-li a {
+#navBarListItem a {
   padding: 14px 16px;
   display: block;
   text-align: center;
@@ -83,10 +74,13 @@ li a {
   text-decoration: none;
 }
 
-li:hover {
+#navBarListItem a:hover {
+  color: #0281db;
+}
+
+#navBarListItem:hover {
   background-color: #ffffff;
   color: black;
-
 }
 
 #logo {
@@ -130,17 +124,12 @@ li:hover {
 
 #contentHolder3 {
   position: absolute;
-  top: 220vh;
+  top: 210vh;
   min-width: 80vw;
 }
 
-.customCard {
-  display: inline-block;
-  width: 300px;
-  height: 430px;
-}
-
 .customHeader1 {
+  padding: 40px 50px 10px 50px;
   position: relative;
   color: white;
   z-index: 1;
@@ -150,10 +139,7 @@ li:hover {
   position: relative;
   font-size: 25px;
   color: #f0f0f0;
-}
-
-.futureListItem {
-  font-size: 20px;
+  padding: 20px 50px 20px 50px;
 }
 
 @media (orientation: portrait)
