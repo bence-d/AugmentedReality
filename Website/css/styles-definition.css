@@ -57,11 +57,11 @@ body {
 
 
 h1 {
-  padding: 25px 25px 15px 25px;
+  padding: 40px 50px 10px 50px;
 }
 
 p {
-  padding: 10px 25px 10px 25px;
+  padding: 20px 50px 20px 50px;
 }
 
 ul {
@@ -94,8 +94,8 @@ li:hover {
   height: 159.6px;
   display: block;
   position: relative;
-  margin: 20px auto 200px auto;
-  top: 100px;
+  margin: 20px auto 150px auto;
+  top: 80px;
   z-index: 2;
 }
 
@@ -105,23 +105,33 @@ li:hover {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 80vw;
-  height:auto;
-  max-height: 100vh;
-  border-radius: 50px;
-  overflow: hidden;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 25px;
+  overflow-y: scroll;
 
   background-color: rgba(0,0,0, 0.3);
+}
+
+.contentHolder::-webkit-scrollbar {
+  display: none;
+}
+
+#contentHolder1 {
+  max-height: 60vh;
 }
 
 #contentHolder2 {
   position: absolute;
   top: 110vh;
+  min-width: 80vw;
+  min-height: 80vh;
 }
 
 #contentHolder3 {
   position: absolute;
-  top: 225vh;
+  top: 220vh;
+  min-width: 80vw;
 }
 
 .customCard {
@@ -175,5 +185,18 @@ li:hover {
   #logo {
     top: 60px;
     margin: 5px auto 100px auto;
+  }
+
+  .contentHolder {
+    max-width: 90vw;
+    max-height: 67vh;
+  }
+
+  #contentHolder2 {
+    max-height: 80vh;
+  }
+
+  #contentHolder3 {
+    max-height: 80vh;
   }
 }
