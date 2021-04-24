@@ -118,7 +118,7 @@ body {
   height: 159.6px;
   display: block;
   position: relative;
-  margin: 20px auto 150px auto;
+  margin: 20px auto 110px auto;
   top: 80px;
   z-index: 2;
 }
@@ -142,7 +142,7 @@ body {
 }
 
 #contentHolder1 {
-  max-height: 60vh;
+  max-height: 55vh;
 }
 
 #contentHolder2 {

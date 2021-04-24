@@ -88,7 +88,7 @@ body {
   height: 159.6px;
   display: block;
   position: relative;
-  margin: 20px auto 150px auto;
+  margin: 20px auto 110px auto;
   top: 80px;
   z-index: 2;
 }
@@ -112,7 +112,7 @@ body {
 }
 
 #contentHolder1 {
-  max-height: 60vh;
+  max-height: 55vh;
 }
 
 #contentHolder2 {
@@ -142,7 +142,7 @@ body {
   padding: 20px 50px 20px 50px;
 }
 
-@media (orientation: portrait)
+@media (orientation: portrait) and (max-height:1920px)
 {
   .contentHolder {
     width: 90vw;
@@ -185,4 +185,10 @@ body {
   #contentHolder3 {
     max-height: 80vh;
   }
+}
+
+@media (min-height: 1500px) {
+	p {
+		color: red;
+	}
 }
