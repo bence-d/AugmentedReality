@@ -5,7 +5,7 @@ body {
 }
 
 #backgroundImage1 {
-  width: 1920px;
+  min-width: 1920px;
   height: 100vh;
 
   position:absolute;
@@ -16,7 +16,7 @@ body {
 
 #backgroundImage2 {
   top: 100vh;
-  width: 1920px;
+  min-width: 1920px;
   height: 100vh;
   margin-left: -4px;
   position:absolute;
@@ -26,7 +26,7 @@ body {
 
 #backgroundImage3 {
   top: 200vh;
-  width: 1920px;
+  min-width: 1920px;
   height: 100vh;
   margin-left: -9px;
   position:absolute;
@@ -62,11 +62,11 @@ body {
   overflow: hidden;
 }
 
-#navBarListItem {
+.navBarListItem {
   float: left;
 }
 
-#navBarListItem a {
+.navBarListItem a {
   padding: 14px 16px;
   display: block;
   text-align: center;
@@ -74,11 +74,11 @@ body {
   text-decoration: none;
 }
 
-#navBarListItem a:hover {
+.navBarListItem a:hover {
   color: #0281db;
 }
 
-#navBarListItem:hover {
+.navBarListItem:hover {
   background-color: #ffffff;
   color: black;
 }
@@ -142,40 +142,64 @@ body {
   padding: 20px 50px 20px 50px;
 }
 
-@media (orientation: portrait) and (max-height:1920px)
+@media (orientation: portrait)
 {
   .contentHolder {
     width: 90vw;
   }
 
+  #navigationBar {
+    height: 6vh;
+  }
+
   #navbarItems {
-    position: fixed;
-    padding-left: 0%;
-    left: 0%;
-    transform: translate(0%, 0);
-    top: 0px;
+    float: left;
+    width: 100vw;
+    z-index: 3;
   }
 
   #navbarBackground {
     position: fixed;
     width: 100%;
-    height: 52px;
+    height: 6vh;
     top: 0px;
   }
 
-  .paragraph1 {
-    position: relative;
-    font-size: 20px;
+  .navBarListItem a {
+    padding: 1.6vh 1.3vh;
+  }
+
+  .navBarListItem {
+    font-size: 1.5vh;
+    height: 6vh;
   }
 
   #logo {
     top: 60px;
-    margin: 5px auto 100px auto;
+    margin: 5px auto 190px auto;
+    min-width: 300px;
+    width: 62.46vw;
+    height: 22.8vh;
   }
 
   .contentHolder {
     max-width: 90vw;
     max-height: 67vh;
+  }
+
+  .customHeader1 {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+  }
+
+
+  .paragraph1 {
+    position: relative;
+    font-size: 2vh;
+  }
+
+  #contentHolder1 {
+    max-height: 50vh;
   }
 
   #contentHolder2 {
@@ -185,10 +209,4 @@ body {
   #contentHolder3 {
     max-height: 80vh;
   }
-}
-
-@media (min-height: 1500px) {
-	p {
-		color: red;
-	}
 }
