@@ -1,0 +1,19 @@
+#page_title {
+    text-align: center;
+}
+
+#fileUploadHolder {
+    width: 20vw;
+    height: auto;
+    background-color: rgba(32, 32, 32, 0.5);
+    padding: 2vh 5vh 2vh 5vh;
+    border-radius: 3px;
+}
+
+input {
+    margin-bottom: 4vh;
+}
+
+input:active, input:focus {
+    outline: none;
+}
