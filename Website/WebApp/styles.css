@@ -1,19 +1,98 @@
-#page_title {
+body {
+    background: linear-gradient(336deg, rgba(33,82,172,1) 0%, rgba(0,40,113,1) 100%);
+}
+
+#buttonGroup {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.buttonHolder {
+    width: 20vh;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.308);
     text-align: center;
+
+    position: relative;
+    float: left;
+    margin: 0 5vh 0 5vh;
+    z-index: 2;
+    cursor: pointer;
 }
 
-#fileUploadHolder {
-    width: 20vw;
-    height: auto;
-    background-color: rgba(32, 32, 32, 0.5);
-    padding: 2vh 5vh 2vh 5vh;
-    border-radius: 3px;
+.buttonLabel {
+    font-size: 12vh;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    z-index: 2;
 }
 
-input {
-    margin-bottom: 4vh;
+.buttonHolder::before {
+    content: ' ';
+    font-size: 12vh;
+    color: rgb(0, 0, 0);
+    display: block;
+    width: inherit;
+    height: 0vh;
+    background-color: rgba(255, 255, 255, 0.507);
+    position: absolute;
+    top: 0vh;
+    z-index: 1;
+    z-index: 1;
+
+    transition: ease-in;
+    transition-timing-function: cubic-bezier(.33,.75,.49,.8);
+    transition-duration: 0.25s;
 }
 
-input:active, input:focus {
-    outline: none;
+.buttonHolder:hover::before {
+    height: inherit;
+    transition: ease-in;
+    transition-timing-function: cubic-bezier(.33,.75,.49,.8);
+    transition-duration: 0.25s;
+}
+
+.buttonHolder::after {
+    font-family: "Cantarell";
+    font-size: 4vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0);
+    display: block;
+    position: absolute;
+    top: 19vh;
+    z-index: 1;
+
+    transition: ease-in;
+    transition-timing-function: cubic-bezier(.33,.75,.49,.8);
+    transition-duration: 0.25s;
+}
+
+.buttonHolder:hover::after {
+    color: rgba(255, 255, 255, 1);
+    top: 20vh;
+
+    transition: ease-in;
+    transition-timing-function: cubic-bezier(.33,.75,.49,.8);
+    transition-duration: 0.25s;
+}
+
+#button1::after {
+    content: 'UPLOAD';
+    padding-left: 0.5vh;
+}
+
+#button2::after {
+    content: 'SELECT';
+    padding-left: 1.25vh;
+}
+
+#button3::after {
+    content: 'DELETE';
+    padding-left: 1.5vh;
 }
