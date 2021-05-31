@@ -1,3 +1,4 @@
+/* Variables & getting elements*/
 var canvas = document.querySelector('canvas');
 var WWidth = window.innerWidth;
 var WHeight = window.innerHeight;
@@ -8,8 +9,10 @@ var c = canvas.getContext('2d');
 var mouseX = 0;
 var mouseY = 0;
 
-const radius = 2;
-var dotArray = [];
+const radius = 2; // radius of the dots
+var dotArray = []; // the array that olds the dot elements
+
+/* creating dots */
 for (var i = 0; i < 50; i++) {
   var startPosX = Math.random() * WWidth;
   var startPosY = Math.random() * WHeight;
@@ -36,6 +39,7 @@ function difference(x,y) {
   }
 }
 
+/* dot element */
 function dot(startPosX, startPosY, radius, startVelocityX, startVelocityY) {
   this.posX = startPosX;
   this.posY = startPosY;
@@ -43,6 +47,7 @@ function dot(startPosX, startPosY, radius, startVelocityX, startVelocityY) {
   this.velocityX = startVelocityX;
   this.velocityY = startVelocityY;
 
+  /* function for drawing the current element (because the canvas will be cleared each frame) */
   this.drawSelf = function() {
     c.beginPath();
     c.arc(this.posX, this.posY, this.radius, 0, Math.PI * 2, true);
@@ -51,6 +56,7 @@ function dot(startPosX, startPosY, radius, startVelocityX, startVelocityY) {
     c.stroke();
   }
 
+  /* drawing lines between the dots */
   this.drawConnections = function() {
     for (var i = 0; i < dotArray.length; i++) {
       if (difference(this.posX, dotArray[i].posX) < 150 && difference(this.posY, dotArray[i].posY) < 150) {
@@ -73,6 +79,7 @@ function dot(startPosX, startPosY, radius, startVelocityX, startVelocityY) {
     }
   }
 
+  /* updating the dot's position */
   this.update = function() {
     if (this.posX + this.radius >= WWidth ||  this.posX - this.radius <= 0)
     {
@@ -92,6 +99,8 @@ function dot(startPosX, startPosY, radius, startVelocityX, startVelocityY) {
   }
 }
 
+
+/* updating the variables holding the mouse's position */
 function updateMousePos(event) {
   mouseX = event.clientX;
   mouseY = event.clientY;
@@ -99,33 +108,14 @@ function updateMousePos(event) {
 }
 
 function animate() {
-  requestAnimationFrame(animate);
+  requestAnimationFrame(animate); // calling this method each frame
 
-  c.clearRect(0,0, WWidth, WHeight);
+  c.clearRect(0,0, WWidth, WHeight); // clearing the canvas
+
+  /* iterating through all of the dots and updating them */
   for (var i = 0; i < dotArray.length; i++) {
     dotArray[i].update();
+  }
 }
 
-
-  // c.clearRect(0,0, WWidth, WHeight);
-  // c.beginPath();
-  // c.arc(pos_X, pos_Y, radius, 0, Math.PI * 2, true);
-  // c.fillStyle = "black";
-  // c.fill();
-  // c.stroke();
-  //
-  // if (pos_X + radius >= WWidth ||  pos_X - radius <= 0)
-  // {
-  //   velocity_X = -velocity_X;
-  // }
-  //
-  // if (pos_Y + radius >= WHeight ||  pos_Y - radius <= 0)
-  // {
-  //   velocity_Y = -velocity_Y;
-  // }
-  //
-  // pos_X += velocity_X;
-  // pos_Y += velocity_Y;
-}
-
-animate();
+animate(); // starting the whole animation process
