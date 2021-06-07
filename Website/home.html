@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Augmented Reality</title>
-    <link href="./css/styles-home.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTf-8">
-  </head>
 
-  <body>
-    <image src="Images/home-background.jpg" id="backgroundImage1"><image>
-    <canvas></canvas>
+<head>
+  <title>Augmented Reality</title>
+  <link href="./css/styles-home.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTf-8">
+</head>
 
+<body>
+  <div id="navigationBar">
+    <div id="navbarItems">
+      <ul id="navBarList">
+        <li class="navBarListItem"><a href="./home.html">Home</a></li>
+        <li class="navBarListItem"><a class="active" href="./definition.html">Definition</a></li>
+        <li class="navBarListItem"><a href="./history.html">History</a></li>
+        <li class="navBarListItem"><a href="./arvsvr.html">AR vs VR</a></li>
+        <li class="navBarListItem"><a href="./usage.html">Usage</a></li>
+      </ul>
+    </div>
+  </div>
 
-    <h1 id="titleText">Augmented Reality</h1>
+  <div class="dropdown">
+    <button class="dropdownButton">Menu</button>
+    <div class="dropdownItems">
+      <a href="./gome.html">Home</a>
+      <a href="./definition.html">Definition</a>
+      <a href="./history.html">History</a>
+      <a href="./arvsvr.html">AR vs VR</a>
+      <a href="./usage.html">Usage</a>
+    </div>
+  </div>
+  </div>
 
-    <p id="about">An interactive experience of a real-world environment where the objects<br>
-       that reside in the real world are enhanced by computer-generated perceptual information.</p>
+  <div id="navbarBackground"></div>
 
-     <image src="Images/appleWireframe.png" id="appleWireframe"><image>
+  <h1 id="titleText">Augmented Reality</h1>
+  <p id="about">
+    An interactive experience of a real-world environment where the objects that reside in the real world are enhanced
+    by computer-generated perceptual information.
+  </p>
 
-     <div id="mouseTrackerOverlay" onmousemove="updateMousePos(event)"></div>
+  <canvas></canvas>
+  <div id="mouseTrackerOverlay" onmousemove="updateMousePos(event)"></div>
 
-     <div id="navigationBar">
-       <div id="navbarItems">
-         <ul id="navBarList">
-           <li class="navBarListItem"><a class="active" href="./definition.html">Definition</a></li>
-           <li class="navBarListItem"><a href="./history.html">History</a></li>
-           <li class="navBarListItem"><a href="./home.html">Home</a></li>
-           <li class="navBarListItem"><a href="./arvsvr.html">AR vs VR</a></li>
-           <li class="navBarListItem"><a href="./usage.html">Usage</a></li>
-         </ul>
-       </div>
+  <script src="./js/homepage-canvas.js"></script>
+</body>
 
-       <div id="navbarBackground"></div>
-     </div>
-
-    <script src="./js/homepage-canvas.js"></script>
-  </body>
 </html>
