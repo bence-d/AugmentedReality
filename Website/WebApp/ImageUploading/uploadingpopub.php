@@ -24,7 +24,7 @@
          print_r($errors);
       }
    }
->
+?>
 <html>
    <body>
       
