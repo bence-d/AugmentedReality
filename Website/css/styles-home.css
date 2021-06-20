@@ -128,14 +128,14 @@ img {
   position: absolute;
   width:100%;
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 32vh;
   padding-left: 10vw;
-  font-size: 7vw;
+  font-size: 5vw;
 }
 
 #about {
-  font-size: 2vw;
-  padding-top: 57vh;
+  font-size: 1.5vw;
+  padding-top: 47vh;
   padding-left: 10vw;
   padding-right: 30vw;
   color: white;
