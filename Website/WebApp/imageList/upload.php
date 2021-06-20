@@ -13,7 +13,7 @@
     $imagetemp = $_FILES['uploadedFile']['tmp_name'];
   
     //The path you wish to upload the image to
-    $imagePath = $_SERVER["DOCUMENT_ROOT"]."/Images/" . $_POST['filename'];
+    $imagePath = $_SERVER["DOCUMENT_ROOT"]."/WebApp/Images/" . $_POST['filename'];
 
     $filename = $_POST['filename'];
 

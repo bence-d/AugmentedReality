@@ -39,7 +39,7 @@
           $queryString = "insert into tags (imageID, tagList) values (" . $_POST['imageID'] . ", '" . $_POST['tagData'] ."')";
         }
 
-        echo $queryString;
+        //echo $queryString;
 
         $qR = $dbh->query($queryString);
       } catch (PDOException $e) {
@@ -76,7 +76,7 @@
       if (isset($_GET["id"])) {
           $qR = $dbh->query('SELECT * from images where id =' . $_GET["id"]);
           $result = $qR->fetchAll();
-          $imgSource = "/Images/" . $result[0][2];
+          $imgSource = "../Images/" . $result[0][2];
       }
     } catch (PDOException $e) {
       print "Error!: " . $e->getMessage() . "<br/>";
