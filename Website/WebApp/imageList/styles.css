@@ -5,7 +5,7 @@
 
 body {
     overflow: hidden;
-    background-image: url("/Images/ar-background.png");
+    background-image: url("../Images/ar-background.png");
 }
 
 #imageGrid

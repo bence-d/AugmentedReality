@@ -112,11 +112,11 @@
         {
             echo "
             <div id=\"headerBar\">
-            <button id=\"headerBar_staticButton\"><img class=\"buttonIcon\" src=\"/Icons/newspaper.png\" onclick=\"window.location.replace('/')\"></button>
-            <button id=\"headerBar_homeButton\"><img class=\"buttonIcon\" src=\"/Icons/house.png\" onclick=\"window.location.replace('/WebApp/imageList/')\"></button>
+            <button id=\"headerBar_staticButton\"><img class=\"buttonIcon\" src=\"../Icons/newspaper.png\" onclick=\"window.location.replace('/')\"></button>
+            <button id=\"headerBar_homeButton\"><img class=\"buttonIcon\" src=\"../Icons/house.png\" onclick=\"window.location.replace('/WebApp/imageList/')\"></button>
             <h1 id=\"headerbar_title\">" . $title ."</h1>
             <div id=\"verticalRuler\"></div>
-            <img id=\"arlogo\" src=\"/logo.png\" alt=\"AR LOGO\">
+            <img id=\"arlogo\" src=\"../logo.png\" alt=\"AR LOGO\">
             </div>
             ";
         } 
@@ -124,10 +124,10 @@
         {
             echo "
             <div id=\"headerBar\">
-            <button id=\"headerBar_homeButton\"><img class=\"buttonIcon\" src=\"/Icons/house.png\" onclick=\"window.location.replace('/WebApp/imageList/')\"></button>
+            <button id=\"headerBar_homeButton\"><img class=\"buttonIcon\" src=\"../Icons/house.png\" onclick=\"window.location.replace('/WebApp/imageList/')\"></button>
             <h1 id=\"headerbar_title\">" . $title ."</h1>
             <div id=\"verticalRuler\"></div>
-            <img id=\"arlogo\" src=\"/logo.png\" alt=\"AR LOGO\">
+            <img id=\"arlogo\" src=\"../logo.png\" alt=\"AR LOGO\">
             </div>
             ";
         }

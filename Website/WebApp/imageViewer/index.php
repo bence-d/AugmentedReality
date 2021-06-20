@@ -49,7 +49,7 @@
 
     <style>
       body {
-        background-image: url("/Images/ar-background.png");
+        background-image: url("../Images/ar-background.png");
         overflow: hidden;
       }
     </style>
