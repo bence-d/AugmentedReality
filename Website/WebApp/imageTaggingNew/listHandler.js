@@ -12,7 +12,7 @@ var tags = [];
 
 // Update the select element in the index.html
 function updateTagList() {
-    console.log("entered updatetaglist...");
+    //console.log("entered updatetaglist...");
     // Collect the children of the tagList
     var tagList = document.getElementById("tagList");
     tagList = tagList.childNodes;
@@ -24,8 +24,8 @@ function updateTagList() {
       }
     }
     
-    console.log("tagOPtions:");
-    console.log(tagOptions);
+    //console.log("tagOPtions:");
+    //console.log(tagOptions);
     
     tags = getTagArray();
     
@@ -84,16 +84,16 @@ tagList.addEventListener("change", updateFields);
 
 function updateFields() {
   var IDOfTag = GetSelectedTagID();
-  console.log("!-- SelectedTagID: " + IDOfTag);
+  //console.log("!-- SelectedTagID: " + IDOfTag);
   var tags = getTagArray();
-  console.log("!-- Tag array:");
-  console.log(tags);
+  //console.log("!-- Tag array:");
+  //console.log(tags);
   var selectedTag = null;
 
   for (var i = 0; i < tags.length; i++) {
     if (tags[i].id == IDOfTag) {
         selectedTag = tags[i];
-        console.log("!-- found item in tags");
+        //console.log("!-- found item in tags");
     }
   }
 
@@ -102,9 +102,9 @@ function updateFields() {
     if (document.getElementById('tagData').value)
     {
       var tagData = JSON.parse(document.getElementById('tagData').value);
-      console.log("selection changed. following data found:");
-      console.log(tagData);
-      console.log(selectedTag);
+      //console.log("selection changed. following data found:");
+      //console.log(tagData);
+      //console.log(selectedTag);
       var foundItem = false;
   
       for (var i = 0; i<tagData.length; i++)
@@ -207,7 +207,7 @@ function LoadDots()
   }
   else
   {
-    console.log("found nothing to load... :(");
+    //console.log("found nothing to load... :(");
   }
   
 }

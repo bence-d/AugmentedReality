@@ -19,7 +19,7 @@ const MIN_DISTANCE = 25;
 
 // Update the tag array that's inside this script
 function updateTagArray() {
-  console.log("--- UPDATE TAG ARRAY ---");
+  //console.log("--- UPDATE TAG ARRAY ---");
   var tagHolder = document.getElementById("tags");
   tagHolder = tagHolder.childNodes;
   tags = [];
@@ -27,7 +27,7 @@ function updateTagArray() {
   for (var i = 0; i < tagHolder.length; i++) {
     if (tagHolder[i].className == "tag")
     {
-      console.log("found tag to add...");
+      //console.log("found tag to add...");
       var tagToAdd = {};
 
       tagToAdd['id'] = tagHolder[i].id;
@@ -42,7 +42,7 @@ function updateTagArray() {
     }
   }
 
-  console.log(tags);
+  //console.log(tags);
 
 }
 
@@ -137,18 +137,18 @@ function highLightTag() {
 }
 
 function getTagArray() {
-  console.log("updating tag array...");
+  //console.log("updating tag array...");
   updateTagArray();
-  console.log("tagging.js: returning tags: ");
-  console.log(tags);
-  console.log("hopping back to listHandler.js...");
+  //console.log("tagging.js: returning tags: ");
+  //console.log(tags);
+  //console.log("hopping back to listHandler.js...");
   return tags;
 }
 
 function generateTagsFromArray() {
   tags = JSON.parse(document.getElementById('tagData').value);
-  console.log("generateTagsfromarray: json of tagdata:");
-  console.log(tags);
+  //console.log("generateTagsfromarray: json of tagdata:");
+  //console.log(tags);
   var tagHolder = document.getElementById("tags");
 
   for (var i = 0; i < tags.length; i++)
