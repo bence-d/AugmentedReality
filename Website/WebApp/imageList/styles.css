@@ -1,0 +1,94 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    overflow: hidden;
+    background-image: url("/Images/ar-background.png");
+}
+
+#imageGrid
+{
+    display: grid; 
+    grid-template-columns: 35vh 35vh 35vh 35vh 35vh;
+    grid-template-rows: 25vh;
+    grid-column-gap: 2vh;
+    grid-row-gap: 2vh;
+    padding: 2vh 2vh 0vh 2vh;
+    width: 98vw;
+    height: 90vh;
+}
+
+.imageHolder
+{
+    background-color: rgb(255, 255, 255);
+    width: 35vh;
+    height: 25vh;
+    overflow: hidden;
+    border-radius: 2vh;
+}
+
+.imageHolder_imageBox
+{
+    height: 20vh;
+    width: inherit;
+    overflow: hidden;
+}
+
+.imageHolder_buttonBar
+{
+    padding-top: 0.9vh;
+    text-align: center;
+    height: 7vh;
+    width: inherit;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    position: relative;
+    top: -1vh;
+}
+
+.imageHolder_button
+{
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+    background-color:#ffffff;
+    border-radius:8px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:5px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin: 0 0.5vh 0 0.5vh;
+}
+
+.imageHolder_button:hover
+{
+    background-color: gray;
+}
+
+#imageBox_uploadHolder {
+    background-color: rgb(255, 255, 255);
+    width: 35vh;
+    height: 25vh;
+    overflow: hidden;
+}
+
+#imageBox_uploadText {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#imageBox_uploadText:hover {
+    color: gray;
+    cursor: pointer;
+}
